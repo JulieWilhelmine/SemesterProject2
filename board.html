@@ -1,0 +1,103 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>A boardgame of thrones</title>
+
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css?family=Alegreya:700|Zilla+Slab:500" rel="stylesheet">
+</head>
+
+<body>
+
+<div id="logo"><a><img src="logo.png"></a></div>
+
+<img src="#" id="player1Char">
+<img src="#" id="player2Char">
+
+<div class="board">
+
+  <div id="notstarted">
+    <div id="dice"><img src="dice.png" onClick="move()"></div>
+    <img src="" id="player1">
+    <img src="" id="player2">
+  </div>
+
+
+    <div class="row">
+        <div class="tile start" id="tile1">
+            <div class="description">Start</div>
+        </div>
+        <div class="tile" id="tile2"></div>
+        <div class="tile" id="tile3"></div>
+        <div class="tile" id="tile4"></div>
+        <div class="tile trap1" id="tile5">
+            <div class="description">Red Wedding</div>
+        </div>
+        <div class="tile" id="tile6"></div>
+        <div class="tile" id="tile"></div>
+        <div class="tile" id="tile8"></div>
+        <div class="tile" id="tile9"></div>
+        <div class="tile trap3" id="tile10">
+          <div class="description">Ambush</div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="tile blank"></div>
+        <div class="tile blank"></div>
+        <div class="tile blank"></div>
+        <div class="tile blank"></div>
+        <div class="tile blank"></div>
+        <div class="tile blank"></div>
+        <div class="tile blank"></div>
+        <div class="tile blank"></div>
+        <div class="tile blank"></div>
+        <div class="tile" id="tile11"></div>
+    </div>
+
+    <div class="row">
+        <div class="tile" id="tile21"></div>
+        <div class="tile" id="tile20"></div>
+        <div class="tile trap2" id="tile19">
+            <div class="description">Dragon fire</div>
+        </div>
+        <div class="tile" id="tile18"></div>
+        <div class="tile" id="tile17"></div>
+        <div class="tile" id="tile16"></div>
+        <div class="tile north" id="tile15">
+            <div class="description">The North</div>
+        </div>
+        <div class="tile" id="tile14"></div>
+        <div class="tile" id="tile13"></div>
+        <div class="tile" id="tile12"></div>
+    </div>
+
+    <div class="row">
+        <div class="tile trap2" id="tile22">
+            <div class="description">Dragon fire</div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="tile" id="tile23"></div>
+        <div class="tile" id="tile24"></div>
+        <div class="tile" id="tile25"></div>
+        <div class="tile" id="tile26"></div>
+        <div class="tile" id="tile27"></div>
+        <div class="tile trap1" id="tile28">
+            <div class="description">Red Wedding</div>
+        </div>
+        <div class="tile" id="tile29"></div>
+        <div class="tile end" id="tile30">
+            <div class="description">Finish</div>
+        </div>
+    </div>
+</div>
+
+<script src="board.js"></script>
+</body>
+</html>

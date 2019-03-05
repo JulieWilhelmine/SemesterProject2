@@ -1,0 +1,273 @@
+
+body {
+  background-color: #caaa71;
+}
+
+#logo {
+  max-width: 400px;
+  width: 100%;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+a:hover {
+  text-decoration: none;
+  color: white;
+}
+
+.welcome {
+  font-size: 3em;
+  max-width: 500px;
+  margin: 0 auto 70px auto;
+  text-align: center;
+  font-family: 'Alegreya', serif;
+  color: #603813;
+}
+
+.button {
+  width: 200px;
+  margin: 15px auto 50px auto;
+  text-align: center;
+  padding: 10px 20px 10px 20px;
+  background-color: #603813;
+  color: white;
+  font-family: 'Alegreya', serif;
+  font-size: 2em;
+  border: 1px solid black;
+}
+
+.button:hover {
+  background-color: #4C2D0F;
+  cursor: pointer;
+}
+
+.character {
+  float: left;
+  width: 220px;
+  height: 485px;
+  margin: 0 20px 40px 0;
+  border: 2px solid #000;
+  text-align: center;
+  font-family: 'Zilla Slab', serif;
+}
+
+.character:hover {
+  box-shadow: 5px 9px 8px 9px #603813;
+  border: 2px solid white;
+}
+
+.container {
+  max-width: 1250px;
+  margin: 0 auto 0 auto;
+}
+
+.yellow {
+  background-color: #eac600;
+}
+
+.black {
+  background-color: #fff;
+}
+
+.orange {
+  background-color: #994400;
+}
+
+.pink {
+  background-color: #ac68a2;
+}
+
+.green {
+  background-color: #204f09;
+}
+
+.teal {
+  background-color: #98c1c4;
+}
+
+.purple {
+  background-color: #40125e;
+}
+
+.darkred {
+  background-color: #340207;
+}
+
+.darkgrey {
+  background-color: #474747;
+}
+
+.darkblue {
+  background-color: #172e3c;
+}
+
+.character img {
+  border-bottom: 2px solid black;
+}
+
+
+/*---------------------------------------------------------------------------*/
+
+#dice {
+  width: 50px;
+  margin-bottom: 20px;
+}
+
+#dice:hover {
+  margin-bottom: 20px;
+  animation: shake 0.5s;
+  animation-iteration-count: infinite;
+  cursor: pointer;
+}
+
+@keyframes shake {
+  0% { transform: translate(1px, 1px) rotate(0deg); }
+  10% { transform: translate(-1px, -2px) rotate(-1deg); }
+  20% { transform: translate(-3px, 0px) rotate(1deg); }
+  30% { transform: translate(3px, 2px) rotate(0deg); }
+  40% { transform: translate(1px, -1px) rotate(1deg); }
+  50% { transform: translate(-1px, 2px) rotate(-1deg); }
+  60% { transform: translate(-3px, 1px) rotate(0deg); }
+  70% { transform: translate(3px, 1px) rotate(-1deg); }
+  80% { transform: translate(-1px, -1px) rotate(1deg); }
+  90% { transform: translate(1px, 2px) rotate(0deg); }
+  100% { transform: translate(1px, -2px) rotate(-1deg); }
+}
+
+#player1, #player2 {
+  width: 60px;
+  position: absolute;
+  margin-left: 20px;
+}
+
+#player1{
+  margin-top: 15px;
+}
+
+#player2 {
+  margin-top: 85px;
+}
+
+#player1Char {
+  width: 150px;
+  position: absolute;
+  left: 10px;
+}
+
+#player2Char {
+  width: 150px;
+  position: absolute;
+  right: 10px;
+}
+
+.board {
+  width: 1200px;
+  margin: 0 auto 200px auto;
+}
+
+.row {
+height: 64px;
+display: block;
+clear: both;
+}
+
+.tile {
+  float: left;
+  background-color: #9a7553;
+  width: 110px;
+  height: 165px;
+  border: 1px solid #603813;
+  margin: 1px;
+}
+
+.blank {
+    background-color: transparent;
+    border: 1px solid transparent;
+}
+
+.description {
+    text-align: center;
+    padding-top: 20px;
+    font-size: 24px;
+    font-family: 'Zilla Slab', serif;
+}
+
+.trap1 {
+    background-color: #803112;
+}
+
+.trap2 {
+    background-color: #634a65;
+}
+
+.trap3 {
+    background-color: #5a7839;
+}
+
+
+.north {
+    background-color: gray;
+    color: black;
+}
+
+.end {
+  width: 200px;
+  background-color: #7c5939;
+}
+
+
+/*--------------------------------------------------------------------------*/
+
+.congrats {
+  text-align: center;
+  margin: 40px auto 0 auto;
+  font-size: 2em;
+  font-family: 'Alegreya', serif;
+  color: #603813;
+}
+
+#winner {
+  font-family: 'Zilla Slab', serif;
+  font-size: 2.4em;
+  margin-top: -10px;
+}
+
+.again {
+  width: 400px;
+  margin-top: 20px;
+}
+
+/*---------------------------------------------------------------------------*/
+
+@media only screen and (max-width: 1550px) {
+  #player1Char {
+    width: 150px;
+    position: absolute;
+    top: 0;
+    left: 500px;
+  }
+
+  #player2Char {
+    width: 150px;
+    position: absolute;
+    top: 0;
+    right: 500px;
+  }
+}
+
+@media only screen and (max-width: 770px) {
+  .welcome {
+    font-size: 2em;
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  .character {
+    margin: 0 auto 10px auto;
+    float: none;
+  }
+}
