@@ -34,9 +34,6 @@ var characterIds = [
         alert(player1Selected + " challenges " + player2Selected);
         window.location.href = "board.html";
       }
-      else {
-        alert("Please select 2 characters");
-      }
     }
 
     boardStorage.clear();
@@ -46,8 +43,9 @@ var characterIds = [
 
         boardStorage.setItem(selectingPlayer, characterName);
         var playerName = boardStorage.getItem(selectingPlayer);
-        alert(selectingPlayer + " selects "+playerName);
         selectingPlayer = 'player2';
+
+        done();
     }
 
 

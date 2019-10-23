@@ -19,8 +19,8 @@ a:hover {
 }
 
 .welcome {
-  font-size: 3em;
-  max-width: 500px;
+  font-size: 2.8em;
+  max-width: 600px;
   margin: 0 auto 70px auto;
   text-align: center;
   font-family: 'Alegreya', serif;
@@ -57,6 +57,7 @@ a:hover {
 .character:hover {
   box-shadow: 5px 9px 8px 9px #603813;
   border: 2px solid white;
+  cursor: pointer;
 }
 
 .container {
@@ -135,6 +136,15 @@ a:hover {
   80% { transform: translate(-1px, -1px) rotate(1deg); }
   90% { transform: translate(1px, 2px) rotate(0deg); }
   100% { transform: translate(1px, -2px) rotate(-1deg); }
+}
+
+#gameText {
+  font-size: 1.6em;
+  max-width: 800px;
+  margin: 0 auto 70px auto;
+  text-align: center;
+  font-family: 'Alegreya', serif;
+  color: #603813;
 }
 
 #player1, #player2 {

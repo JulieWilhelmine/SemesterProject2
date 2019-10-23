@@ -141,41 +141,41 @@ var boardStorage = window.localStorage;
 
 
   function hitATrap(){
-      alert("You died in the red wedding, move back to Start!");
+      document.getElementById('gameText').innerHTML = player1Selected + ' died in the red wedding, move back to Start!';
       document.getElementById("tile1").appendChild(document.getElementById("player1"));
   }
 
   function hitATrap2(){
-      alert("You got hit by dragon fire! Move back to the North!");
+      document.getElementById('gameText').innerHTML = player1Selected + ' got hit by dragon fire! Move back to the North!';
       document.getElementById("tile15").appendChild(document.getElementById("player1"));
   }
 
   function hitATrap3(){
-      alert("You've been ambushed! Return to Start!");
+      document.getElementById('gameText').innerHTML =  player1Selected + " was ambushed! Return to Start!";
       document.getElementById("tile1").appendChild(document.getElementById("player1"));
   }
 
   function hitATrapP2(){
-      alert("Player 2 died in the red wedding and is moved back to Start!");
+      document.getElementById('gameText').innerHTML = player2Selected + " died in the red wedding and is moved back to Start!";
       document.getElementById("tile1").appendChild(document.getElementById("player2"));
   }
 
   function hitATrap2P2(){
-      alert("Player 2 got hit by dragon fire and is moved back to the North!");
+      document.getElementById('gameText').innerHTML = player2Selected + " got hit by dragon fire and is moved back to the North!";
       document.getElementById("tile15").appendChild(document.getElementById("player2"));
   }
 
   function hitATrap3P2(){
-      alert("Player 2 has been ambushed and returns to Start!");
+      document.getElementById('gameText').innerHTML = player2Selected + " has been ambushed and returns to Start!";
       document.getElementById("tile1").appendChild(document.getElementById("player2"));
   }
 
   function finished(){
-      alert("You finished first!");
+      alert(player1Selected +" finished first!");
       window.location.href = "win.html";
   }
 
   function finished2(){
-      alert("Player 2 got you beat!");
+      alert(player2Selected + " got you beat!");
       window.location.href = "win2.html";
   }
